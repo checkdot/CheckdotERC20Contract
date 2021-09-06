@@ -1,0 +1,6 @@
+build/
+truffle-config.js
+node_modules/
+secret.js
+testnet-contract.address
+utils/
