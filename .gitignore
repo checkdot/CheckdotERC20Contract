@@ -5,3 +5,4 @@ secret.js
 testnet-contract.address
 mainnet-contract.address
 utils/
+package-lock.json
