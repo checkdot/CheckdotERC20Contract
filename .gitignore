@@ -2,6 +2,7 @@ build/
 truffle-config.js
 node_modules/
 secret.js
+local-contract.address
 testnet-contract.address
 mainnet-contract.address
 utils/
