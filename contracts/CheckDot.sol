@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: UNLICENSED
 
-pragma solidity ^0.8.0;
+pragma solidity ^0.8.9;
 
 import "./erc20/ERC20.sol";
 
@@ -13,6 +13,7 @@ contract CheckDot is ERC20 {
     address private _checkDotDeployer;
 
     constructor(address _deployer) ERC20("CheckDot", "CDT") {
+        require(_deployer != address(0), "CheckDot: deploy from the zero address");
         _checkDotDeployer = _deployer;
         _mint(_checkDotDeployer, _totalSupply);
     }
